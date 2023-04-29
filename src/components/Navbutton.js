@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Mybutton = (props) => {
+const Navbutton = ({NavbuttonHandler, pageNumber, page}) => {
   return (
-    <button className="round-button"> {props.text} </button>
+    <button onClick={NavbuttonHandler} className= {pageNumber === page ? "whitebg round-button" : "bluebg round-button"} >{page}</button>
   )
 }
 
-export default Mybutton
+export default Navbutton
