@@ -13,8 +13,7 @@ export const Header = ({constData, getPages, updateData}) => {
 
     return (
     <form className='mainDisplaychild'>
-        <label></label>
-        <input onChange={inputHandler} type="text" id="search" name="search" placeholder="Enter your search term here"/>
+        <input onChange={inputHandler} type="text" id="search" name="search" placeholder="Please enter a Search term"/>
     </form>
     )
 }
