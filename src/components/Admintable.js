@@ -88,6 +88,7 @@ function Admintable() {
         getPages(filteredArray)
         setData(filteredArray)
     }
+    
 
     function checkBoxHandler(event){
         let index = +event.target.getAttribute("getindex")
