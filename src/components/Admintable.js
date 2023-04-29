@@ -90,6 +90,7 @@ function Admintable() {
     }
     
 
+
     function checkBoxHandler(event){
         let index = +event.target.getAttribute("getindex")
         console.log(index)
