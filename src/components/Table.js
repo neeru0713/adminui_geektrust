@@ -45,7 +45,7 @@ export const Table = ({
     <table className='mainDisplaychild'>
         <thead>
             <tr>
-                <th><input type="checkbox" onClick={headerCheckBoxClickHandler} checked={headerCheckBoxPageNumber === pageNumber && headerCheckBoxSelected} /></th>
+                <th><input type="checkbox" onChange={headerCheckBoxClickHandler} checked={headerCheckBoxPageNumber === pageNumber && headerCheckBoxSelected} /></th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Role</th>
@@ -57,7 +57,9 @@ export const Table = ({
         
         {data.slice((pageNumber-1)*10,pageNumber*10).map((rowData, index) =>(
             <Tablerow 
-                data={rowData} 
+                key={rowData.id}
+                data={data}
+                rowData={rowData} 
                 index={index} 
                 selectedRows={selectedRows} 
                 pageNumber={pageNumber} 

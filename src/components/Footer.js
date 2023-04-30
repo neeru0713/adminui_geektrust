@@ -66,8 +66,9 @@ export const Footer = ({
 
                 <button onClick={NavbuttonHandler} className={` ${pageNumber === "&lt;&lt;" ? "whitebg round-button" : "bluebg round-button"} ${backBuffer<2?"disabledbtn":""} `} disabled={backBuffer<2?true:false} >&lt;&lt;</button> 
                 <button onClick={NavbuttonHandler} className={` ${pageNumber === "&lt;" ? "whitebg round-button" : "bluebg round-button"} ${backBuffer<1?"disabledbtn":""} `}  disabled={backBuffer<1?true:false} >&lt;</button>
-                {pageButtons.map((page)=>(
+                {pageButtons.map((page, index)=>(
                     <Navbutton
+                        key={index}
                         NavbuttonHandler={NavbuttonHandler}
                         pageNumber={pageNumber}
                         page={page}
