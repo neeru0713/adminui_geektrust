@@ -1,11 +1,12 @@
+/* eslint-disable no-undef */
 import React from 'react';
-import { render, fireEvent, screen } from '@testing-library/react';
-import Admintable from '../components/Admintable';
+import { render, screen } from '@testing-library/react';
+import Adminuitable from '../components/Adminuitable';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('Admintable', () => {
   it('renders the main display', () => {
-    render(<Admintable />);
+    render(<Adminuitable />);
     const linkElement = screen.getByText(/Name/i);
     expect(linkElement).toBeInTheDocument();
   });

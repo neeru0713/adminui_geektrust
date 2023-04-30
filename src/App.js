@@ -1,14 +1,12 @@
-import './App.css';
-import Admintable from './components/Admintable';
+import "./App.css";
 
+import React from 'react';
+import Adminuitable from "./components/Adminuitable";
 
 function App() {
-
   return (
     <div className="App">
-      <Admintable>
-        </Admintable>
-      
+      <Adminuitable></Adminuitable>
     </div>
   );
 }
