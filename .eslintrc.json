@@ -1,0 +1,33 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react"
+  ],
+  "rules": {
+      "react/jsx-props-no-spreading": "error",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/prop-types": "error",
+      "react/destructuring-assignment": ["error", "always"],
+      "react/no-unused-state": "error",
+      "react/prefer-stateless-function": "error",
+      "react/require-default-props": "error",
+      "react/jsx-handler-names": ["error", {
+          "eventHandlerPrefix": "handle",
+          "eventHandlerPropPrefix": "on"
+      }]
+  }
+}
