@@ -23,7 +23,7 @@ function Adminuitable() {
     } catch (e) {
       console.log(e);
     }
-  };
+  }
 
   useEffect(() => {
   fetchData();
