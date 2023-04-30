@@ -27,7 +27,7 @@ function Adminuitable() {
 
   useEffect(() => {
   fetchData();
-  }, [fetchData]);
+  }, []);
 
 //   sets the pageButtons array with number of buttons to be displayed in ui based on data length
   function getPages(arr) {
